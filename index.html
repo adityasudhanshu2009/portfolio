@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sudhanshu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<!-- link font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> 
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+    <header>
+           <!-- <img class="logo" src="logomine-01.png"> -->
+            <nav class="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact </a>
+            </nav>         
+    </header>
+    <section id="parallax">
+        <div class="parallax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <!-- <h3 class="text">Hi , I am</h3><br> -->
+        <h2 id="text">Aditya Sudhanshu</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+    </div>
+        
+    </section>
+     <section id="about">
+        <div class="about">
+        <img src="pp.jpg" class="profilepic">
+        <div class="content">
+            <h2>About</h2>
+            <p>
+                Hi, I am a Front-End Developer and UI Designer and
+                as a Front-End Developer and UI Designer with a passion for Android development in Flutter, 
+                I'm passionate about crafting intuitive and visually appealing user experiences. With a diverse
+                 skill set in web development and mobile app design, I thrive in the ever-evolving world of technology.
+                 <br><br>
+            </p>
+            <div class="tab-tiles">
+                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-content" id="skills">
+                <ul>
+                    <li><span>UI Designing</span><br> Designing Web and App Interfaces</li>
+                    <li><span>Web Developement</span><br>Developing Creative Web Application</li>
+                    <li><span>Android Developement</span><br>Developing Android Application</li>
+
+                </ul>
+            </div>
+            <div class="tab-content" id="education">
+                <ul>
+                    <li><span>B.E/B.Tech</span><br>RNS Institute of Technology<br>Bangalore</li>
+                    <li><span>Senior Secondary</span><br> Saint Joseph's School<br>Bhagalpur</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+        
+     </section>
+     <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tab of tablinks){
+                tab.classList.remove("active-links");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-content");
+            }
+            event.target.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-content");
+             
+        }
+
+     </script>
+     <section id="projects">
+        <div class="projects">
+            <h2 class="subdivision">My Work</h2>
+            <p style="font-size: 1.3rem;">Here are some of my work</p> 
+            <div class="workbutton">
+                <p class="tab-link active-link" onclick="openwork('webd')">Web Dev</p>
+                <p class="tab-link" onclick="openwork('ui')">UI Design</p>
+                <p class="tab-link" onclick="openwork('other')">Other</p>
+            </div>           
+            <div class="work-list active-list" id="webd">
+                <div class="work">
+                    <a href="https://fantfolks.com" target="_blank">
+                    <img src="1.png">
+                    <div class="layer">
+                        <h3>FantFolks</h3>
+                        <p style="font-size: 0.9rem;">Web Developement</p>
+                        <p>This website is a created to showcase people your skills for freelancing projects.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/adityasudhanshu2009/Car_Rent_Management-master.git" target="_blank">
+                    <img src="carrent.png">
+                    <div class="layer">
+                        <h3>Car Rental</h3>
+                        <p style="font-size: 0.9rem;">Full Stack Developement</p>
+                        <p>This website is a simple car renting website for a single person to whole family who needs to rent car for longer duration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </a>
+               
+                </div>
+            </div>
+            <div class="work-list" id="ui">
+                <div class="work" >
+                    <a href="https://www.figma.com/file/o6wNsl0rn57F8dsqYgwntc/Fitness?type=design&node-id=211%3A1161&mode=design&t=Eb5FluooJHaA88VD-1" target="_blank">
+                    <img src="gearup.png">
+                    <div class="layer">
+                        <h3>FantFolks</h3>
+                        <p style="font-size: 0.9rem;">UI Design</p>
+                        <p>This UI design is of a simple fitness application which keeps track of your health for various sports activities. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="https://www.figma.com/file/jvkSR4g81c11qLcBXaxYgK/Stp?type=design&node-id=32%3A1131&mode=design&t=oyfv78PJaedfkAbZ-1" target="_blank">
+                    <img src="2.png">
+                    <div class="layer">
+                        <h3>Online Stationary</h3>
+                         <p  style="font-size: 0.9rem;">UI Design</p>   
+                        <p>This user interface shows a simple design of a online stationary shop.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </a>
+               
+                </div>
+            </div>
+            <div class="work-list" id="other">
+                <div class="work">
+                    <a href="https://github.com/adityasudhanshu2009/ConnectMe.git" target="_blank">
+                    <img src="whisper.png">
+                    <div class="layer">
+                        <h3>Whisper</h3>
+                        <p style="font-size: 0.9rem;">Application Developement</p>
+                        <p>This application is made for connecting with strangers and communicate with each other. It uses firebase for authentication as well as chatting.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/adityasudhanshu2009/flutter_product_catalog.git" target="_blank">
+                    <img src="3.png">
+                    <div class="layer">
+                        <h3>Product Catalog</h3>
+                         <p  style="font-size: 0.9rem;">Application Developement</p>   
+                        <p>This application is about a product catalog application where we can shop for different latest devices.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </a>
+               
+                </div>
+            </div>
+            <a href="https://github.com/adityasudhanshu2009?tab=repositories" target="_blank"><button class="btn">See More</button></a>
+        </div>
+    </section>
+    <script>
+        var tablink=document.getElementsByClassName("tab-link");
+        var workcontent=document.getElementsByClassName("work-list");
+        function openwork(tabname){
+            for(tab of tablink){
+                tab.classList.remove("active-link");
+
+            }
+            for(tabc of workcontent){
+                tabc.classList.remove("active-list");
+            }
+            event.target.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-list");
+             
+        }
+    </script>
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <a href="mailto:adityasudhanshu2009@gmail.com"><p><i class="fa-solid fa-envelope"></i>adityasudhanshu2009@gmail.com</p></a>
+                    <p><i class="fa-solid fa-phone"></i>+916203092830</p>
+                    <div class="social-account">
+                        <a href="https://www.instagram.com/adityaa_sudhanshu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/adityasudhanshu2009?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aditya-sudhanshu/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/imAsudhanshu" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://dribbble.com/aditya2009" target="_blank"><i class="fa-solid fa-basketball"></i></a>
+                    </div>
+                    <a href="My CV.pdf" download class="button">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" autocomplete="off">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea placeholder="Your Message" rows="6" name="Message" required></textarea>
+                        <button type="submit" class="button" name="Submit">Submit</button>
+                    </form>
+                    <span id="msg"></span> 
+                </div>
+            </div>
+        </div>
+     </div>
+
+     
+     <div class="footer">           
+            <a href="#parallax"><p class="to-top"> <i class="fa-solid fa-angle-up"></i>Back To Top</p></a>
+            <p><i class="fa-regular fa-copyright"></i>Designed and Developed by Aditya Sudhanshu</p>
+    <script src="main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyslgUu3SQR2usGTQLMZ0gzwfG7AGnc9pOxI6T9kB5eZQYI9R0PD-hFuHUlTOVr6ava/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Thank You for your response. I will get back to you soon.";
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    
+</body>
+</html>
